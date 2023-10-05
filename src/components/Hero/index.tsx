@@ -1,10 +1,14 @@
+"use client"
+
 import Image from "next/image";
 import Lottie from "react-lottie-player";
-import Animation from "../Animation";
+import { Fade } from "react-awesome-reveal";
+import lottieJson from "../../../public/animation_lmskkxvj.json";
 
 export default function Hero() {
     return (
         <div className="bg-lightGray px-24 py-32">
+            <Fade>
             <div className="flex justify-between items-center mx-auto max-w-7xl">
                 <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-5 text-6xl font-bold whitespace-nowrap">
@@ -18,12 +22,11 @@ export default function Hero() {
                 </span>
                 </div>
                 <div>
-
-                <Animation />
                 {/* <Image src="/HeroBanner.svg" alt="로고" width={470} height={387} /> */}
+                <Lottie loop animationData={lottieJson} play />;
                 </div>
-
             </div>
+            </Fade>
         </div>
     )
 }
