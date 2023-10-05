@@ -7,9 +7,9 @@ import lottieJson from "../../../public/animation_lmskkxvj.json";
 
 export default function Hero() {
     return (
-        <div className="bg-lightGray px-24 py-32">
+        <div className="bg-lightGray px-6 py-9 gap-4 lg:px-24 lg:py-32 md:py-12 md:px-16">
             <Fade>
-            <div className="flex justify-between items-center mx-auto max-w-7xl">
+            <div className="flex flex-col gap-10 mx-auto max-w-7xl lg:flex-row lg:justify-beween lg:gap-0">
                 <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-5 text-6xl font-bold whitespace-nowrap">
                     <h1>안녕하세요,</h1>
@@ -21,9 +21,8 @@ export default function Hero() {
                     Runs everywhere.
                 </span>
                 </div>
-                <div>
-                {/* <Image src="/HeroBanner.svg" alt="로고" width={470} height={387} /> */}
-                <Lottie loop animationData={lottieJson} play />;
+                <div className="bg-local md:bg-fixed"> 
+                    <Lottie loop animationData={lottieJson} play />;
                 </div>
             </div>
             </Fade>

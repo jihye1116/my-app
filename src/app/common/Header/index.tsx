@@ -1,6 +1,7 @@
 import Image from "next/image";
-import CoffeeIcon from "../Icons/CoffeeIcon";
+import CoffeeIcon from "../../../components/Icons/CoffeeIcon";
 import Link from "next/link"
+import Button from "../../../components/atoms/Button";
 export default function Header() {
   return (
     <header className="px-24 py-4 bg-lightGray drop-shadow-sm">
@@ -11,10 +12,12 @@ export default function Header() {
         <div className="flex items-center gap-12 font-bold">
           <Link href="/">Github</Link>
           <Link href="https://portfolio.bssm.io">about Me</Link>
-          <button className="bg-primary text-white py-2.5 px-4 rounded flex gap-2.5">
+          
+          <Button>
             <CoffeeIcon />
             <span>Coffe Chat with Me</span>
-          </button>
+          </Button>
+
         </div>
       </div>
     </header>

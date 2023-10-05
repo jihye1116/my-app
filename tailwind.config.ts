@@ -15,7 +15,6 @@ const config: Config = {
         deepBlue: "#001858"
       },
       animation: {
-        
       }
     },
   },
